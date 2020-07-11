@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" dir = "ltr" >
+ <head>
+ 	<meta charset="utf-8">
+ 	<!--<script src="style.css" charset="utf-8"></script>-->
+ 	<link rel="stylesheet" href="style.css">
+ 	<script src="app.js" charset="utf-8" ></script>
+ 	<title>Basic Tetris</title>
+ </head>
+ <body>
+
+ 	<h3>Score: <span id="score">0</span></h3>
+ 	<p><h3><span id ="game-over"></span></h3></p>
+ 	<button id="start-button">Start/Pause</button>
+ 	<button id="new-game">New Game</button>
+ 	<p></p>
+ 	<div class = "container">
+	 	<div class="grid">
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 	<div class="taken"></div>
+		 </div>
+		 <div class="mini-grid">
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+		 	<div></div>
+
+		 </div>
+	</div>
+ </body>
+</html>
